@@ -1,0 +1,2 @@
+/*  SQL  */
+SELECT CBRT(number1) AS "cuberoot", LOG10(number2) / LOG10(EXP(1)) AS "logarithm" FROM decimals;

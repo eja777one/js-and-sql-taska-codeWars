@@ -1,0 +1,2 @@
+--# write your statement here: you will be given a table 'moves' with columns 'position' and 'roll'. return a table with a column 'res'. #--
+SELECT position + 2 * roll AS "res" FROM moves;

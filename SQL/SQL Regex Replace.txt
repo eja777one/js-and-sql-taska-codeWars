@@ -1,0 +1,2 @@
+/*  SQL  */
+SELECT project, commits, contributors, REPLACE(address, '([0-9]+)', '!') AS "address" FROM repositories;

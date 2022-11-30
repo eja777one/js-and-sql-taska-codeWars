@@ -1,0 +1,8 @@
+/*  SQL  */
+SELECT 
+  LENGTH(name) AS "id",
+  LENGTH(CAST(legs AS varchar)) AS "name",
+  LENGTH(CAST(arms AS varchar)) AS "legs",
+  LENGTH(characteristics) AS "arms",
+  LENGTH(CAST(id AS varchar)) AS "characteristics"
+FROM monsters;
