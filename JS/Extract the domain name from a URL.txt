@@ -1,0 +1,22 @@
+function domainName(url){
+  const part1 = '://';
+  const part2 = 'www.';
+  const part3 = '://www.';
+  
+  function findDom (url, part) {
+    const answer = [];
+    let start = url.indexOf(part);
+    if(!start) start = 0;
+    console.log(start)
+    for (let i = start + part.length; i < url.length; i++) {
+      if (url[i] == '.') break
+      answer.push(url[i]);
+    }
+    return answer.join('');
+  }
+  
+  if (url.match(part3)) return findDom(url, part3);
+  else if (url.match(part2)) return findDom(url, part2);
+  else if (url.match(part1)) return findDom(url, part1);
+  else return findDom(url, '');
+}
